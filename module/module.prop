@@ -1,0 +1,6 @@
+id=mumu15_wechat_media_fix
+name=MuMu Android 15 WeChat Media Fix
+version=v2.1.0
+versionCode=20100
+author=awaxiaoyu
+description=WeChat-only ARM media provider repair for the verified MuMu Android 15 translator. Other apps use the original library. Disable and reboot to revert.
