@@ -13,8 +13,10 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
-      - name: Install Android NDK
-        run: sdkmanager 'ndk;27.2.12479018'
+      - name: Set up Android SDK and NDK
+        uses: android-actions/setup-android@v3
+        with:
+          packages: 'ndk;27.2.12479018'
       - name: Check shell syntax
         run: |
           for script in module/*.sh; do sh -n "$script"; done
